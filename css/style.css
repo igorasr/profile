@@ -1,0 +1,316 @@
+
+*{
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-text);
+    letter-spacing: var(--letter-spacing);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2{
+    font-size: var(--font-size-h2);
+    margin-bottom: 1.5rem;
+}
+h3{
+    font-size: var(--font-size-h3);
+    margin-bottom: 1rem;
+}
+h1, h2, h3{
+    font-family: var(--font-family-secundary);
+}
+
+p{
+    line-height: var(--line-heigh);
+    letter-spacing: var(--letter-spacing);
+    margin: 1rem 0;
+}
+
+p,h2,h3 {
+    color: var(--font-color-text-dark);
+
+}
+
+
+/* DEFINIÇÕES DEFAULT DOS CONTAINERS */
+
+.container{
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+@media (min-width: 576px){
+    
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .container{
+        max-width: 720px;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    .container{
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .container{
+        max-width: 1140px;
+    }
+
+}
+
+@media (min-width: 1400px){
+
+    .container{
+        max-width: 1320px;
+    }
+
+}
+
+/* <=====================  ASIDE  =====================> */
+
+
+#btn-menu{
+    top: 2rem;
+    right: 2rem;
+    font-size: 25px;
+    padding: .3rem;
+    background-color: var(--bg-color-dark);
+    border-radius: 35%;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+.head{
+    padding: 0 15px;
+    background-color: var(--bg-color-dark);
+}
+   .profile, .profile h2{
+    color: #ffffff;
+   }
+
+    .head img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: block;
+        margin: 20px auto;
+    }
+
+
+    .head h2{
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .head .profile .links{
+        margin-top: 1.5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .head .links a {
+        margin-right: 1rem;
+        border-radius: 50%;
+        transition: .3;
+        text-decoration: none;
+        color: var(--font-color-text-gray);
+        transition: all .3s;
+        padding: 0.6rem;
+    }
+
+    .head .links a:hover{
+        background-color: var(--font-color-hover);
+        transform: scale(1.1);
+    }
+
+
+
+.nav-menu{
+    padding: 1.5rem;
+
+}
+
+    .nav-menu li{
+        padding: .8rem;
+
+    }
+
+    .nav-menu a,
+    .nav-menu a:focus{
+        display: flex;
+        align-items: center;
+        color: var(--font-color-text-gray);
+        transition: all 0.3s;
+    }
+
+    .nav-menu a i,
+    .nav-menu a:focus i {
+        padding-right: 0.8rem;
+        color: var(--font-color-text-gray);
+    }
+
+    .nav-menu a:hover,
+    .nav-menu li:hover{
+        text-decoration: none;
+        color: var(--font-color-hover);
+    }
+
+    .nav-menu a:hover i,
+    .nav-menu li:hover > a i{
+        color: #468faf;
+    }
+
+/* <===================== MAIN INICIO =====================>*/
+
+#inicio{
+    background:url(../pictures/bgi__inicio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.226);
+    background-blend-mode: color;
+}
+
+#tittle__inicio{
+   color: #ffffff;
+   gap: 1rem;
+}
+
+#subtittle{
+    font-size: 1.5rem;
+    font-family: var(--font-family-secundary);
+    font-weight: 200;
+}
+
+#link__arrow{
+    color: white;
+   margin: 0 3rem 3rem 0;
+}
+#link__arrow i{
+    padding-right: 10px;
+    font-weight: 700;
+
+}
+#link__arrow a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* MAIN SOBRE */
+
+
+#sobre h2{
+    text-transform: uppercase;
+}
+
+.lists ul {
+    font-weight: 400;
+}
+.lists ul span{
+    font-weight: 300;
+}
+
+.lists ul li{
+    padding: .7rem .5rem;
+    border-bottom: 1px solid #6c757d8f;;
+}
+
+/* MAIN HABILIDADES */
+
+
+#habilidade{
+    background-color: var(--bg-color-ligth);
+
+}
+
+#habilidade h2{
+
+    text-transform: uppercase;
+}
+
+.progress{
+    background-color: #ffffff;
+    
+    overflow: hidden;
+}
+.progress-bar{
+    background-color: var(--bg-color-dark);
+    color: #ffffff;
+    text-align: center;
+    justify-items: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+.progress_list p{
+    margin-bottom: 0;
+}
+
+
+/* SCROLLBAR */
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+*::-webkit-scrollbar-track{
+    width: 12px;
+    opacity: 1;
+    box-shadow: inset 0 0 .3rem rgba(0, 0, 0, 0.719);
+    background-color: var(--bg-color-ligth);
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--bg-color-dark);
+    border-radius: 3px;
+}
+
+
+/* ANIMACOES */
+
+[data-animation]{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-animation = "down"]{
+    transform: translate3d(0, -100px, 0)
+}
+
+[data-animation = "up"]{
+    transform: translate3d(0, 100px, 0)
+}
+[data-animation = "left"]{
+    transform: translate3d(-100%, 0, 0)
+}
+[data-animation = "righ"]{
+    transform: translate3d(50px, 0, 0)
+}
+
+[data-animation].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
