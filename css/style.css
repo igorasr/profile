@@ -5,6 +5,9 @@
     letter-spacing: var(--letter-spacing);
 }
 
+
+ /* =========== DEFAULTS ========== */
+
 h1 {
     font-size: var(--font-size-h1);
 }
@@ -24,14 +27,13 @@ h1, h2, h3{
 p{
     line-height: var(--line-heigh);
     letter-spacing: var(--letter-spacing);
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 p,h2,h3 {
     color: var(--font-color-text-dark);
 
 }
-
 
 /* DEFINIÇÕES DEFAULT DOS CONTAINERS */
 
@@ -89,8 +91,8 @@ p,h2,h3 {
 
 
 #btn-menu{
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 10%;
     font-size: 25px;
     padding: .3rem;
     background-color: var(--bg-color-dark);
@@ -132,17 +134,20 @@ p,h2,h3 {
 
     }
 
-    .head .links a {
+    .links__itens {
         margin-right: 1rem;
         border-radius: 50%;
-        transition: .3;
         text-decoration: none;
         color: var(--font-color-text-gray);
         transition: all .3s;
         padding: 0.6rem;
     }
 
-    .head .links a:hover{
+    .links__itens:last-child{
+        margin-right: 0;
+    }
+
+    .links__itens:hover{
         background-color: var(--font-color-hover);
         transform: scale(1.1);
     }
@@ -208,7 +213,7 @@ p,h2,h3 {
 
 #link__arrow{
     color: white;
-   margin: 0 3rem 3rem 0;
+  
 }
 #link__arrow i{
     padding-right: 10px;
@@ -218,10 +223,11 @@ p,h2,h3 {
 #link__arrow a{
     text-decoration: none;
     color: #ffffff;
+    padding: 1rem;
 }
 
 
-/* MAIN SOBRE */
+/* ========== MAIN SOBRE ========== */
 
 
 #sobre h2{
@@ -240,7 +246,7 @@ p,h2,h3 {
     border-bottom: 1px solid #6c757d8f;;
 }
 
-/* MAIN HABILIDADES */
+/* ========== MAIN HABILIDADES ========== */
 
 
 #habilidade{
@@ -255,7 +261,6 @@ p,h2,h3 {
 
 .progress{
     background-color: #ffffff;
-    
     overflow: hidden;
 }
 .progress-bar{
@@ -271,7 +276,7 @@ p,h2,h3 {
 }
 
 
-/* SCROLLBAR */
+/* ========== SCROLLBAR ========== */
 
 *::-webkit-scrollbar{
     width: 10px;
@@ -289,7 +294,9 @@ p,h2,h3 {
 }
 
 
-/* ANIMACOES */
+/* ========== ANIMACOES ========== */
+
+
 
 [data-animation]{
     opacity: 0;
@@ -308,6 +315,7 @@ p,h2,h3 {
 }
 [data-animation = "righ"]{
     transform: translate3d(50px, 0, 0)
+    
 }
 
 [data-animation].animate{

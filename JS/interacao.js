@@ -23,7 +23,7 @@ const item = document.querySelectorAll("[data-animation]");
 
 const animeScroll = () => {
 
-    const windowTop = window.pageYOffset + window.innerHeight * 1;
+    const windowTop = window.pageYOffset + window.innerHeight;
     
     item.forEach(element => {
         if (windowTop > element.offsetTop){

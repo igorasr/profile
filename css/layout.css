@@ -9,7 +9,7 @@
 
 .head{
     width: 300px;
-    height: 100vh;
+    height: 100%;
     bottom: 0;
     top: 0;
     position: fixed;
@@ -29,8 +29,6 @@
 #btn-menu{
     display: none;
     position: fixed;
-    right: 5px;
-    top: 5px;
     z-index: 9997;
 }
 
@@ -56,6 +54,7 @@
 }
 
 #link__arrow{
+    margin: 0 3rem 3rem 0;
     display: flex;
    justify-content: end;
    align-items: flex-end;
@@ -113,6 +112,7 @@
 
 #habilidade{
     background-color: var(--bg-color-ligth);
+    height: 70vh;
 }
 
 #habilidade h2{
@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 1024px) {
     .head{
-        width: 80%;
+        width: 70%;
         left: -100%;
     }
    
@@ -152,7 +152,7 @@
         flex-wrap: wrap;
     }
     #tittle__inicio{
-        padding-left: 1.5em;
+        padding: 0;
         width: 100%;
         text-align: center;
     }
@@ -162,7 +162,7 @@
         }
      
      #link__arrow{
-         width: 100%;
+         margin: 2rem auto;
      }
      #infos__sobre{
          flex-direction: column;
