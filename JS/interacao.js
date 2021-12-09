@@ -9,7 +9,7 @@ btnMenu.addEventListener("click", ()=>{
     btnMenu.classList.contains('bi-list')
     ? btnMenu.classList.replace('bi-list', 'bi-x')
     : btnMenu.classList.replace('bi-x', 'bi-list')
-
+    
     body.classList.toggle('menu-nav-active');
 })
 
@@ -30,6 +30,7 @@ const animeScroll = () => {
             element.classList.add('animate');
         }else {
             element.classList.remove('animate')
+           
         }
     });
 
@@ -41,3 +42,7 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
     animeScroll();
 }) ;
+
+// TESTE
+
+
