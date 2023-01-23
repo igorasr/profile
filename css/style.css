@@ -193,7 +193,7 @@ p,h2,h3 {
 /* <===================== MAIN INICIO =====================>*/
 
 #inicio{
-    background:url(../pictures/bgi__inicio.jpg);
+    background:url(../assets/images/bgi__inicio.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
