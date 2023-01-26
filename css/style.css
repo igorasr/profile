@@ -39,10 +39,10 @@ p,h2,h3 {
 
 .container{
     width: 100%;
+    padding-top: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
-    margin-top: 2rem;
     margin-right: auto;
     margin-left: auto;
     
@@ -296,7 +296,32 @@ p,h2,h3 {
     border: 1px solid var(--font-color-text-dark);
 }
 
+/* ========== MAIN CONTATO ========== */
 
+#contato{
+    background-color: var(--bg-color-ligth);
+}
+
+.typing{
+    width: 27ch;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(27) infinite,
+    blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50%{
+        border-color: transparent;
+    }
+}
 
 
 /* ========== SCROLLBAR ========== */

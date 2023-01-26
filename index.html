@@ -20,7 +20,7 @@
     <aside class="head">
         <section class="profile">
 
-            <img src="./assets/images/profile__aside.jpg" alt="">
+            <img src="./assets/images/profile__aside.svg" alt="">
             <h2>Igor Augusto</h2>
 
             <div class="links">
@@ -65,7 +65,7 @@
                 </li>
 
                 <li class="navigation__item">
-                    <a href="" class="navigation__link">
+                    <a href="#contato" class="navigation__link">
                         <i class="bi bi-person-lines-fill"></i> Contato</a>
                 </li>
 
@@ -88,7 +88,7 @@
 
         </section> <!-- INICIO - TITULO E SUBTITULO -->
 
-        <section class="container" id="sobre">
+        <section id="sobre" class="container">
             <div id="content__sobre" data-animation="down">
 
                 <h2>Sobre</h2>
@@ -230,7 +230,6 @@
             </div>
         </section> <!-- SECAO HABILIDADE -->
 
-
         <section id="curriculo" class="container">
             <h2>Curriculo</h2>
             <div class="container" id="curriculo_container">
@@ -281,6 +280,40 @@
             </div>
 
         </section>
+
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <div id="container__contato" class="container">
+                <div class="contato__content">
+                    <img src="./assets/images/new_message.svg" alt="">
+                </div>
+
+                <div class="contato__content">
+                    <form action="" id="form__contato">
+                        <div class="form__header">
+                            <h3 class="typing">Mande-me uma menssagem</h3>
+                        </div>
+
+                        <div class="form__group">
+                            <div class="input__box">
+                                <label for="input__nome">Nome: </label>
+                                <input type="text" name="nome" id="input__nome">
+                            </div>
+                        
+                            <div class="input__box">
+                                <label for="input__email">E-mail: </label>
+                                <input type="email" name="email" id="input__email">
+                            </div>
+                        
+                            <div class="input__box">
+                                <label for="input__message">Mensagem: </label>
+                                <textarea name="message" id="input__message" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> <!-- SECAO CONTATO -->
 
     </main> <!-- CONTEUDO PRINCIPAL -->
 
