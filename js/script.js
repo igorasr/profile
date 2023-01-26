@@ -15,7 +15,6 @@ const profile = {
     animeScroll(){
 
         const windowTop = window.pageYOffset + window.innerHeight * 0.85;
-        console.log(this)
         this.item.forEach(element => {
             if (windowTop > element.offsetTop) {
                 element.classList.add('animate');
