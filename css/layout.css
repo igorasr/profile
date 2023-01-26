@@ -15,6 +15,7 @@
     position: fixed;
     z-index: 9997;
     transition:all 1s;
+    overflow-y: scroll;
 }
 
 .menu-nav-active{
